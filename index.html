@@ -39,36 +39,65 @@
       padding: 13px 33px; border:none; border-radius:25px; text-decoration:none; margin-bottom:36px; display:inline-block; margin-top:16px;}
     .hero-img-wrap { margin: 32px 0; }
     .hero-img { width: 330px; max-width:88vw; border-radius:20px; box-shadow:0 14px 44px #0f0e0b25; border:6px solid var(--offwhite);}
+    
     .features { 
-      display: grid; 
-      grid-template-columns: 1fr 1fr; 
+      display: flex;
+      flex-direction: column;
       gap: 48px;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 44px 4vw;
+      max-width: 700px;
+      margin: 48px auto 0 auto;
+      padding: 0 8vw;
     }
-    .feature { background: #fff; border-radius:14px; box-shadow:0 2px 14px #46513a13; padding:36px 32px;}
-    .feature h3{color:var(--olive);font-size:1.2rem;margin-bottom:10px;}
-    .feature ul{margin:0 0 10px 20px;}
+    .feature { 
+      background: #fff; 
+      border-radius: 16px; 
+      box-shadow: 0 2px 16px #46513a18;
+      padding: 32px 25px 30px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow .2s;
+    }
+    .feature:hover {
+      box-shadow: 0 4px 32px #46513a25;
+    }
     .feature img { 
-      width:100%;
-      max-width:370px;
-      display:block;
-      margin:0 auto 20px auto;
-      border-radius:10px;
-      box-shadow:0 6px 18px #46513a22;
+      width: 100%;
+      max-width: 390px;
+      display: block;
+      margin: 0 auto 22px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px #46513a19;
       object-fit: cover;
       background: #e8ece0;
     }
-    .innov {margin:60px auto 0 auto;max-width:1000px;padding-bottom:40px;}
+    .feature h3 {
+      color: var(--olive);
+      font-size: 1.22rem;
+      margin-bottom: 12px;
+      text-align: center;
+      margin-top: 0;
+    }
+    .feature ul{
+      margin: 0 0 10px 24px;
+      font-size: 1.07em;
+    }
+    .innov {
+      margin:60px auto 0 auto;
+      max-width:700px;
+      padding-bottom:40px;
+      padding-left:8vw; padding-right:8vw;
+    }
     .innov h2 {color: var(--olive);}
-    @media (max-width:950px){
-      .features{ grid-template-columns:1fr;}
+    @media (max-width:800px){
+      .features, .innov { padding-left:3vw; padding-right:3vw;}
+    }
+    @media (max-width:550px){
+      .feature { padding: 15px 6px 20px 6px; }
+      .features, .innov { padding-left:0; padding-right:0;}
     }
     @media (max-width:700px){
       .navbar { flex-direction:column; gap:12px; padding:13px 5px;}
-      .features, .innov { padding-left:2px; padding-right:2px;}
-      .feature { padding:18px 8px;}
     }
   </style>
 </head>
@@ -102,7 +131,6 @@
     </section>
 
     <section class="features">
-
       <!-- Feature 1: AI-Powered Skin Analysis -->
       <div class="feature">
         <img src="2.jpg" alt="AI-Powered Skin Analysis">
@@ -112,7 +140,6 @@
           <li>Dermatologist-grade accuracy from proprietary AI models.</li>
         </ul>
       </div>
-
       <!-- Feature 2: Personalized Skincare Routines -->
       <div class="feature">
         <img src="1.jpg" alt="Personalized Skincare Routine">
@@ -122,7 +149,6 @@
           <li>Adapts routines depending on skin progress and local climate.</li>
         </ul>
       </div>
-
       <!-- Feature 3: Environmental Intelligence -->
       <div class="feature">
         <img src="6.jpg" alt="Environmental Intelligence">
@@ -132,7 +158,6 @@
           <li>Skin tips evolve automatically for unique city and climate needs.</li>
         </ul>
       </div>
-
       <!-- Feature 4: Smart Touch & AR Experience -->
       <div class="feature">
         <img src="3.jpg" alt="Smart Touch and AR Display">
@@ -142,7 +167,6 @@
           <li>Augmented reality try-on for skincare/makeup looks.</li>
         </ul>
       </div>
-
       <!-- Feature 5: Progress Tracking & Cloud Sync -->
       <div class="feature">
         <img src="1.jpg" alt="Progress Tracking">
@@ -152,7 +176,6 @@
           <li>All data privacy-compliant and user-owned.</li>
         </ul>
       </div>
-
       <!-- Feature 6: Virtual Expert and Teleconsult -->
       <div class="feature">
         <img src="3.jpg" alt="Virtual Expert and Teleconsult">
