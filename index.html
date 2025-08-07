@@ -39,13 +39,29 @@
       padding: 13px 33px; border:none; border-radius:25px; text-decoration:none; margin-bottom:36px; display:inline-block; margin-top:16px;}
     .hero-img-wrap { margin: 32px 0; }
     .hero-img { width: 330px; max-width:88vw; border-radius:20px; box-shadow:0 14px 44px #0f0e0b25; border:6px solid var(--offwhite);}
-    .features {display:grid; grid-template-columns:1fr 1fr; gap:48px;max-width:1100px;margin:0 auto;padding: 44px 4vw;}
-    .feature {background: #fff; border-radius:14px; box-shadow:0 2px 14px #46513a13; padding:36px 32px;}
+    .features { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 44px 4vw;
+    }
+    .feature { background: #fff; border-radius:14px; box-shadow:0 2px 14px #46513a13; padding:36px 32px;}
     .feature h3{color:var(--olive);font-size:1.2rem;margin-bottom:10px;}
     .feature ul{margin:0 0 10px 20px;}
+    .feature img { 
+      width:100%;
+      max-width:370px;
+      display:block;
+      margin:0 auto 20px auto;
+      border-radius:10px;
+      box-shadow:0 6px 18px #46513a22;
+      object-fit: cover;
+      background: #e8ece0;
+    }
     .innov {margin:60px auto 0 auto;max-width:1000px;padding-bottom:40px;}
     .innov h2 {color: var(--olive);}
-    /* Responsive */
     @media (max-width:950px){
       .features{ grid-template-columns:1fr;}
     }
@@ -60,7 +76,7 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="image.jpg" alt="Smart Mirror Logo"><span>REVIVE</span>
+        <img src="1.jpg" alt="Smart Mirror Logo"><span>REVIVE</span>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">About</a></li>
@@ -81,47 +97,65 @@
       </p>
       <a class="play-btn" href="#">▶ Watch Demo</a>
       <div class="hero-img-wrap">
-        <img src="image.jpg" alt="Revive Smart Mirror" class="hero-img">
+        <img src="1.jpg" alt="Revive Smart Mirror" class="hero-img">
       </div>
     </section>
 
     <section class="features">
+
+      <!-- Feature 1: AI-Powered Skin Analysis -->
       <div class="feature">
+        <img src="2.jpg" alt="AI-Powered Skin Analysis">
         <h3>AI-Powered Skin Analysis</h3>
         <ul>
           <li>Daily facial scans identify hydration, pigmentation, pores, wrinkles, and more.</li>
           <li>Dermatologist-grade accuracy from proprietary AI models.</li>
         </ul>
       </div>
+
+      <!-- Feature 2: Personalized Skincare Routines -->
       <div class="feature">
+        <img src="1.jpg" alt="Personalized Skincare Routine">
         <h3>Personalized Skincare Routines</h3>
         <ul>
           <li>Ingredient-based, not brand-based, advice for optimal results.</li>
           <li>Adapts routines depending on skin progress and local climate.</li>
         </ul>
       </div>
+
+      <!-- Feature 3: Environmental Intelligence -->
       <div class="feature">
+        <img src="6.jpg" alt="Environmental Intelligence">
         <h3>Environmental Intelligence</h3>
         <ul>
           <li>IoT sensors detect humidity, UV index, and pollution daily.</li>
-          <li>Skin tips evolve automatically for Delhi, Mumbai, Bangalore, and beyond!</li>
+          <li>Skin tips evolve automatically for unique city and climate needs.</li>
         </ul>
       </div>
+
+      <!-- Feature 4: Smart Touch & AR Experience -->
       <div class="feature">
+        <img src="3.jpg" alt="Smart Touch and AR Display">
         <h3>Smart Touch &amp; AR Experience</h3>
         <ul>
           <li>Intuitive touchscreen, voice &amp; gesture control for accessibility and style.</li>
           <li>Augmented reality try-on for skincare/makeup looks.</li>
         </ul>
       </div>
+
+      <!-- Feature 5: Progress Tracking & Cloud Sync -->
       <div class="feature">
+        <img src="1.jpg" alt="Progress Tracking">
         <h3>Progress Tracking &amp; Cloud Sync</h3>
         <ul>
           <li>Track improvements over weeks/months, anywhere from mobile app or mirror.</li>
           <li>All data privacy-compliant and user-owned.</li>
         </ul>
       </div>
+
+      <!-- Feature 6: Virtual Expert and Teleconsult -->
       <div class="feature">
+        <img src="3.jpg" alt="Virtual Expert and Teleconsult">
         <h3>Virtual Expert and Teleconsult</h3>
         <ul>
           <li>1-click access to certified dermatologists, or consult Revive AI 24/7.</li>
