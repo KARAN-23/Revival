@@ -1,382 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revive Smart Mirror – Business Plan & Tech Landing</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', Arial, sans-serif;
-            background: #f7f9fc;
-            color: #222;
-        }
-        header {
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            padding-bottom: 10px;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 18px 32px;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            width: 42px;
-            height: 42px;
-            margin-right: 12px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .logo span {
-            font-weight: 700;
-            font-size: 1.3rem;
-            letter-spacing: 2px;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 24px;
-        }
-        .nav-links li a {
-            text-decoration: none;
-            color: #555;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav-links li a:hover {
-            color: #0c6cf2;
-        }
-        .preorder-btn {
-            background: #222a35;
-            color: #fff !important;
-            padding: 11px 22px;
-            border-radius: 22px;
-            text-decoration: none;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-left: 22px;
-            transition: background 0.2s;
-        }
-        .preorder-btn:hover {
-            background: #0c6cf2;
-        }
-        main {
-            max-width: 900px;
-            margin: 40px auto 0 auto;
-        }
-        .hero {
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 18px;
-            font-weight: 700;
-        }
-        .hero p {
-            color: #606671;
-            font-size: 1.14rem;
-            margin-bottom: 34px;
-            line-height: 1.6;
-        }
-        .play-btn {
-            background: #0c6cf2;
-            color: #fff;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 28px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 32px;
-            transition: background 0.2s;
-        }
-        .play-btn:hover {
-            background: #222a35;
-        }
-        .mirror-image-container {
-            margin-top: 36px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .product-image {
-            width: 300px;
-            max-width: 60vw;
-            border-radius: 12px;
-            box-shadow: 0 12px 38px rgba(0,0,0,0.15);
-        }
-        .section-title {
-            margin-top: 42px;
-            font-size: 2rem;
-            font-weight: 600;
-            color: #222a35;
-            margin-bottom: 14px;
-            text-align: left;
-        }
-        .doc-content {
-            background: #fff;
-            border-radius: 12px;
-            padding: 40px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.05);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0 32px 0;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ececec;
-        }
-        th {
-            background: #f4f7fa;
-            font-weight: 600;
-        }
-        /* Responsive */
-        @media (max-width: 700px) {
-            .navbar { flex-direction: column; padding: 10px; }
-            main { padding: 10px; }
-            .doc-content { padding: 15px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revive Smart Mirror – The Future of Skincare</title>
+  <style>
+    :root {
+      --olive: #46513A;
+      --dark: #181B16;
+      --gold: #C2B280;
+      --offwhite: #F5F5EE;
+      --text: #232620;
+      --fade: #e1e5d0;
+    }
+    body { margin: 0; background: var(--offwhite); color: var(--text); font-family: 'Montserrat', Arial, sans-serif; }
+    header { background: var(--olive); color: var(--offwhite); }
+    .navbar {
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 1200px; margin: 0 auto; padding: 18px 32px;
+    }
+    .logo { display: flex; align-items: center; gap:10px; font-weight: 800; letter-spacing:2px; }
+    .logo img { width: 44px; height: 44px; border-radius:8px; object-fit:cover; box-shadow:0 2px 8px #23262022;}
+    .logo span { font-size: 1.6em; color: var(--gold);}
+    .nav-links { list-style: none; display: flex; gap: 28px;}
+    .nav-links li a { color: var(--offwhite); text-decoration: none; font-weight: 600; letter-spacing:1px; transition: color .2s;}
+    .nav-links li a:hover { color: var(--gold);}
+    .cta-btn { background: var(--gold); color: var(--olive); font-weight: bold; border-radius: 22px;
+      padding: 11px 28px; text-decoration: none; margin-left: 20px; transition: background .2s;}
+    .cta-btn:hover { background: #b3aa67; }
+    .hero {
+      background: linear-gradient(120deg, var(--olive) 70%, var(--gold) 130%);
+      color: var(--offwhite); text-align: center; padding: 72px 20px 48px 20px;
+    }
+    .hero h1 { font-size: 2.8rem; font-weight: bold; letter-spacing:2px; margin-bottom: 16px;}
+    .hero h2 { font-size: 1.5rem; font-weight:500; color:var(--gold);}
+    .hero p { max-width: 650px; margin: 0 auto 30px auto; font-size: 1.16rem; color:var(--fade);}
+    .play-btn { background: var(--gold); color: var(--olive); font-weight:700; font-size: 1.1rem;
+      padding: 13px 33px; border:none; border-radius:25px; text-decoration:none; margin-bottom:36px; display:inline-block; margin-top:16px;}
+    .hero-img-wrap { margin: 32px 0; }
+    .hero-img { width: 330px; max-width:88vw; border-radius:20px; box-shadow:0 14px 44px #0f0e0b25; border:6px solid var(--offwhite);}
+    .features {display:grid; grid-template-columns:1fr 1fr; gap:48px;max-width:1100px;margin:0 auto;padding: 44px 4vw;}
+    .feature {background: #fff; border-radius:14px; box-shadow:0 2px 14px #46513a13; padding:36px 32px;}
+    .feature h3{color:var(--olive);font-size:1.2rem;margin-bottom:10px;}
+    .feature ul{margin:0 0 10px 20px;}
+    .innov {margin:60px auto 0 auto;max-width:1000px;padding-bottom:40px;}
+    .innov h2 {color: var(--olive);}
+    /* Responsive */
+    @media (max-width:950px){
+      .features{ grid-template-columns:1fr;}
+    }
+    @media (max-width:700px){
+      .navbar { flex-direction:column; gap:12px; padding:13px 5px;}
+      .features, .innov { padding-left:2px; padding-right:2px;}
+      .feature { padding:18px 8px;}
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="image.jpg" alt="Smart Mirror" />
-                <span>REVIVE</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <a href="#" class="preorder-btn">PRE-ORDER NOW</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>The future of tech is here</h1>
-            <p>
-                Holistically incentivize revolutionary collaboration and idea sharing before cost effective users.
-                Actual focused services before highly efficient human capital.
-            </p>
-            <a href="#" class="play-btn">▶ Play Video</a>
-            <div class="mirror-image-container">
-                <img src="image.jpg" alt="Revive Smart Mirror" class="product-image">
-            </div>
-        </section>
-        <section class="doc-content">
-            <h2 class="section-title">Introduction and Company Description</h2>
-            <p>
-                Revive is a pioneering beauty-tech startup aiming to revolutionize skincare in India. Our AI-powered Smart Mirror scans your skin, tracks pollution, and delivers personalized ingredient-based skincare routines. We blend AI, environmental data science, and wellness to address the unique skin health challenges of Indian consumers.
-            </p>
-            <h3>Mission Statement</h3>
-            <p>
-                To empower every individual with precise, data-backed skincare guidance using technology and environmental insights.
-            </p>
-            <h3>Problem–Solution Fit</h3>
-            <ul>
-                <li>Consumers face trial-and-error with generic skincare products.</li>
-                <li>Revive offers daily skin analysis, weather-aware advice, and tailored routines for Indian climates and lifestyles.</li>
-            </ul>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image.jpg" alt="Smart Mirror Logo"><span>REVIVE</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="collab.html">Collaboration</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="products.html" class="cta-btn">PRE-ORDER</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>The Future of Skincare, at Your Fingertips</h1>
+      <h2>India's First AI-Powered Smart Mirror</h2>
+      <p>
+        Revive brings together Artificial Intelligence, real-time environmental data, and intuitive design to create your personal skin health companion. Scan, analyze, and transform your routine—with science and style.
+      </p>
+      <a class="play-btn" href="#">▶ Watch Demo</a>
+      <div class="hero-img-wrap">
+        <img src="image.jpg" alt="Revive Smart Mirror" class="hero-img">
+      </div>
+    </section>
 
-            <h3>Competitive Comparison</h3>
-            <table>
-                <tr>
-                    <th>Brand</th>
-                    <th>Presence in India</th>
-                    <th>Strengths</th>
-                    <th>Weaknesses</th>
-                </tr>
-                <tr>
-                    <td>HiMirror</td>
-                    <td>Limited</td>
-                    <td>Early entry, skin scanner</td>
-                    <td>Expensive, lacks local adaptation</td>
-                </tr>
-                <tr>
-                    <td>Lululab Lumini</td>
-                    <td>Import only</td>
-                    <td>Strong AI algorithm</td>
-                    <td>Not weather/local pollution responsive</td>
-                </tr>
-            </table>
+    <section class="features">
+      <div class="feature">
+        <h3>AI-Powered Skin Analysis</h3>
+        <ul>
+          <li>Daily facial scans identify hydration, pigmentation, pores, wrinkles, and more.</li>
+          <li>Dermatologist-grade accuracy from proprietary AI models.</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h3>Personalized Skincare Routines</h3>
+        <ul>
+          <li>Ingredient-based, not brand-based, advice for optimal results.</li>
+          <li>Adapts routines depending on skin progress and local climate.</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h3>Environmental Intelligence</h3>
+        <ul>
+          <li>IoT sensors detect humidity, UV index, and pollution daily.</li>
+          <li>Skin tips evolve automatically for Delhi, Mumbai, Bangalore, and beyond!</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h3>Smart Touch &amp; AR Experience</h3>
+        <ul>
+          <li>Intuitive touchscreen, voice &amp; gesture control for accessibility and style.</li>
+          <li>Augmented reality try-on for skincare/makeup looks.</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h3>Progress Tracking &amp; Cloud Sync</h3>
+        <ul>
+          <li>Track improvements over weeks/months, anywhere from mobile app or mirror.</li>
+          <li>All data privacy-compliant and user-owned.</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h3>Virtual Expert and Teleconsult</h3>
+        <ul>
+          <li>1-click access to certified dermatologists, or consult Revive AI 24/7.</li>
+          <li>Perfect for both home users and pros.</li>
+        </ul>
+      </div>
+    </section>
 
-            <h3>Department Plan</h3>
-            <table>
-                <tr>
-                    <th>Department</th>
-                    <th>Key Roles</th>
-                    <th>Planned Hires</th>
-                </tr>
-                <tr>
-                    <td>Product & Technology</td>
-                    <td>AI Engineer, App Developer, UX Designer</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Marketing</td>
-                    <td>Content Strategist, Social Media Manager</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Operations</td>
-                    <td>Customer Support Lead, Logistics Exec</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Finance & Admin</td>
-                    <td>Accounts Officer, HR/Admin Coordinator</td>
-                    <td>2</td>
-                </tr>
-            </table>
-
-            <h3>Projected Income Statement</h3>
-            <table>
-                <tr>
-                    <th>Year</th>
-                    <th>Revenue (₹ Lakhs)</th>
-                    <th>Cost (₹ Lakhs)</th>
-                    <th>Net Income (₹ Lakhs)</th>
-                </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>1,099.4</td>
-                    <td>350.0</td>
-                    <td>749.4</td>
-                </tr>
-                <tr>
-                    <td>2026</td>
-                    <td>3,328.2</td>
-                    <td>1,065.0</td>
-                    <td>2,263.2</td>
-                </tr>
-                <tr>
-                    <td>2027</td>
-                    <td>8,485.2</td>
-                    <td>2,625.0</td>
-                    <td>5,860.2</td>
-                </tr>
-                <tr>
-                    <td>2028</td>
-                    <td>18,738.0</td>
-                    <td>5,175.0</td>
-                    <td>13,563.0</td>
-                </tr>
-                <tr>
-                    <td>2029</td>
-                    <td>34,376.0</td>
-                    <td>8,600.0</td>
-                    <td>25,776.0</td>
-                </tr>
-            </table>
-
-            <h3>Startup Costs</h3>
-            <table>
-                <tr>
-                    <th>Category</th>
-                    <th>Estimated Cost (₹ Lakhs)</th>
-                </tr>
-                <tr>
-                    <td>Product R&D + Prototyping</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>Manufacturing Setup</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>App & Platform Development</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Marketing & Branding Launch</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Admin + Office Setup</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>Staff Salaries (6 months)</td>
-                    <td>60</td>
-                </tr>
-                <tr>
-                    <td>Legal & Compliance</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Contingency Buffer (10%)</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <th>Total Estimated Costs</th>
-                    <th>400 Lakhs</th>
-                </tr>
-            </table>
-
-            <h3>Cash Flow Highlights</h3>
-            <table>
-                <tr>
-                    <th>Year</th>
-                    <th>Opening Cash</th>
-                    <th>Net Income</th>
-                    <th>CapEx</th>
-                    <th>Closing Cash</th>
-                </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>0.0</td>
-                    <td>749.4</td>
-                    <td>0.2</td>
-                    <td>749.2</td>
-                </tr>
-                <tr>
-                    <td>2026</td>
-                    <td>749.2</td>
-                    <td>2,263.2</td>
-                    <td>0.3</td>
-                    <td>3,012.1</td>
-                </tr>
-                <tr>
-                    <td>2027</td>
-                    <td>3,012.1</td>
-                    <td>5,860.2</td>
-                    <td>0.5</td>
-                    <td>8,871.8</td>
-                </tr>
-                <tr>
-                    <td>2028</td>
-                    <td>8,871.8</td>
-                    <td>13,563.0</td>
-                    <td>0.7</td>
-                    <td>22,434.1</td>
-                </tr>
-                <tr>
-                    <td>2029</td>
-                    <td>22,434.1</td>
-                    <td>25,776.0</td>
-                    <td>1.0</td>
-                    <td>48,209.1</td>
-                </tr>
-            </table>
-        </section>
-    </main>
+    <section class="innov">
+      <h2>Our Innovations</h2>
+      <p>
+        Revive is the only mirror blending local weather, pollution, and individual skin data for India. It brings together smart home integration, invisible sensors, and an elegant, low-glare design.  
+        <br><br>
+        We aim to make trustworthy, effective skincare as intuitive and delightful as looking in the mirror every morning.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
