@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Revive Smart Mirror – Order Direct</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* --- [Paste Shared CSS & Navigation Styles From Above Here] --- */
+    :root { --olive:#46513A; --dark:#181B16; --gold:#C2B280; --offwhite:#F5F5EE; --text:#232620; --fade:#e1e5d0;}
+    body { margin:0; background:var(--offwhite); color:var(--text); font-family:'Montserrat', Arial, sans-serif; }
+    header { background: var(--olive); color: var(--offwhite); }
+    .navbar { display:flex; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; padding: 18px 32px;}
+    .logo { display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:2px;}
+    .logo img{width:44px; height:44px; border-radius:8px;}
+    .logo span{font-size:1.6em; color:var(--gold);}
+    .nav-links{list-style:none;display:flex;gap:28px;}
+    .nav-links li a{color:var(--offwhite);text-decoration:none;font-weight:600;letter-spacing:1px;transition:color .2s;}
+    .nav-links li a:hover{color:var(--gold);}
+    .cta-btn{background:var(--gold);color:var(--olive);font-weight:bold;border-radius:22px; padding:11px 28px;text-decoration:none;margin-left:20px;transition:background .2s;}
+    .cta-btn:hover{background:#b3aa67;}
+    .prod-section{max-width:1100px;margin:50px auto;padding:30px 6vw;background:#fff; border-radius:16px;box-shadow:0 2px 14px #46513a15;}
+    .prod-hero{display:flex;gap:32px;align-items:center;flex-wrap:wrap;}
+    .prod-img{width:310px; border-radius:20px;box-shadow:0 8px 32px #181B1615;}
+    .prod-info{flex:1;}
+    .prod-info h1{color:var(--olive);}
+    .price-tag{font-size:1.7em;color:var(--gold);margin-bottom:8px;}
+    .buy-btn{background:var(--olive);color:var(--offwhite);font-size:1.1em;font-weight:700;padding:15px 48px;
+      border:none;border-radius:30px;box-shadow:0 4px 16px #181B1615;letter-spacing:2px;transition:background .2s;}
+    .buy-btn:hover{background:var(--gold);color:var(--olive);}
+    .features{margin:36px 0 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;}
+    .feature{background:var(--fade);padding:23px 18px;border-radius:12px;}
+    .feature h3{margin:0 0 7px 0;color:var(--olive);}
+    @media (max-width:750px){ .prod-hero{flex-direction:column;} }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image.jpg" alt="Smart Mirror Logo"><span>REVIVE</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="collab.html">Collaboration</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="products.html" class="cta-btn">PRE-ORDER</a>
+    </nav>
+  </header>
+  <div class="prod-section">
+    <div class="prod-hero">
+      <img src="image.jpg" alt="Revive Smart Mirror" class="prod-img">
+      <div class="prod-info">
+        <h1>Revive Smart Mirror</h1>
+        <p class="price-tag">₹28,000 (intro offer)</p>
+        <p>
+          Your intelligent skincare advisor. Daily AI scans, pollution and weather tracking, ingredient-based routines—brought home in a beautifully designed, interactive mirror.
+        </p>
+        <button class="buy-btn">Pre-Order Now</button>
+        <ul>
+          <li>✔ 1 year warranty</li>
+          <li>✔ Free setup & onboarding support</li>
+          <li>✔ Cash-back on first three months of subscription</li>
+        </ul>
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <h3>Mobile App Sync</h3>
+        <p>Stay updated and monitor your routines via the companion mobile app—secure and private.</p>
+      </div>
+      <div class="feature">
+        <h3>Cloud Skin Profile</h3>
+        <p>Track your evolving skin health. Visualize your progress. Data is encrypted and yours alone.</p>
+      </div>
+      <div class="feature">
+        <h3>Ingredient-Only Guidance</h3>
+        <p>No forced brands—only the ingredients that matter, for all Indian skin types.</p>
+      </div>
+      <div class="feature">
+        <h3>Subscription Plans</h3>
+        <p>Premium analytics, trends, and remote dermatology support available for members.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
