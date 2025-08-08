@@ -18,16 +18,24 @@
     .navbar {
       display: flex; align-items: center; justify-content: space-between;
       max-width: 1200px; margin: 0 auto; padding: 18px 32px;
+      flex-wrap: wrap;
     }
     .logo { display: flex; align-items: center; gap:10px; font-weight: 800; letter-spacing:2px; }
     .logo img { width: 44px; height: 44px; border-radius:8px; object-fit:cover; box-shadow:0 2px 8px #23262022;}
     .logo span { font-size: 1.6em; color: var(--gold);}
-    .nav-links { list-style: none; display: flex; gap: 28px;}
+    .nav-links { list-style: none; display: flex; gap: 28px; flex-wrap: wrap; }
     .nav-links li a { color: var(--offwhite); text-decoration: none; font-weight: 600; letter-spacing:1px; transition: color .2s;}
     .nav-links li a:hover { color: var(--gold);}
     .cta-btn { background: var(--gold); color: var(--olive); font-weight: bold; border-radius: 22px;
       padding: 11px 28px; text-decoration: none; margin-left: 20px; transition: background .2s;}
     .cta-btn:hover { background: #b3aa67; }
+
+    .video-section video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     .hero {
       background: linear-gradient(120deg, var(--olive) 70%, var(--gold) 130%);
       color: var(--offwhite); text-align: center; padding: 72px 20px 48px 20px;
@@ -41,18 +49,18 @@
     .hero-img { width: 330px; max-width:88vw; border-radius:20px; box-shadow:0 14px 44px #0f0e0b25; border:6px solid var(--offwhite);}
     
     .features { 
-      display: flex;
-      flex-direction: column;
-      gap: 48px;
-      max-width: 700px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
       margin: 48px auto 0 auto;
-      padding: 0 8vw;
+      padding: 0 6vw;
     }
     .feature { 
       background: #fff; 
       border-radius: 16px; 
       box-shadow: 0 2px 16px #46513a18;
-      padding: 32px 25px 30px 25px;
+      padding: 24px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -82,13 +90,15 @@
       margin: 0 0 10px 24px;
       font-size: 1.07em;
     }
+
     .innov {
       margin:60px auto 0 auto;
-      max-width:700px;
+      max-width: 700px;
       padding-bottom:40px;
       padding-left:8vw; padding-right:8vw;
     }
     .innov h2 {color: var(--olive);}
+
     @media (max-width:800px){
       .features, .innov { padding-left:3vw; padding-right:3vw;}
     }
@@ -105,7 +115,8 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="Revive.jpeg" alt="Smart Mirror Logo"><span>REVIVE</span>
+        <img src="Revive.jpeg" alt="Smart Mirror Logo" onerror="this.src='https://via.placeholder.com/44';">
+        <span>REVIVE</span>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">About</a></li>
@@ -117,6 +128,15 @@
       <a href="products.html" class="cta-btn">PRE-ORDER</a>
     </nav>
   </header>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+    <video autoplay muted loop playsinline>
+      <source src="Revive.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
   <main>
     <section class="hero">
       <h1>The Future of Skincare, at Your Fingertips</h1>
@@ -131,7 +151,6 @@
     </section>
 
     <section class="features">
-      <!-- Feature 1: AI-Powered Skin Analysis -->
       <div class="feature">
         <img src="2.jpeg" alt="AI-Powered Skin Analysis">
         <h3>AI-Powered Skin Analysis</h3>
@@ -140,7 +159,6 @@
           <li>Dermatologist-grade accuracy from proprietary AI models.</li>
         </ul>
       </div>
-      <!-- Feature 2: Personalized Skincare Routines -->
       <div class="feature">
         <img src="5.jpeg" alt="Personalized Skincare Routine">
         <h3>Personalized Skincare Routines</h3>
@@ -149,7 +167,6 @@
           <li>Adapts routines depending on skin progress and local climate.</li>
         </ul>
       </div>
-      <!-- Feature 3: Environmental Intelligence -->
       <div class="feature">
         <img src="6.jpeg" alt="Environmental Intelligence">
         <h3>Environmental Intelligence</h3>
@@ -158,7 +175,6 @@
           <li>Skin tips evolve automatically for unique city and climate needs.</li>
         </ul>
       </div>
-      <!-- Feature 4: Smart Touch & AR Experience -->
       <div class="feature">
         <img src="3.jpeg" alt="Smart Touch and AR Display">
         <h3>Smart Touch &amp; AR Experience</h3>
@@ -167,7 +183,6 @@
           <li>Augmented reality try-on for skincare/makeup looks.</li>
         </ul>
       </div>
-      <!-- Feature 5: Progress Tracking & Cloud Sync -->
       <div class="feature">
         <img src="1.jpeg" alt="Progress Tracking">
         <h3>Progress Tracking &amp; Cloud Sync</h3>
@@ -176,7 +191,6 @@
           <li>All data privacy-compliant and user-owned.</li>
         </ul>
       </div>
-      <!-- Feature 6: Virtual Expert and Teleconsult -->
       <div class="feature">
         <img src="3.jpeg" alt="Virtual Expert and Teleconsult">
         <h3>Virtual Expert and Teleconsult</h3>
